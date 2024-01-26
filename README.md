@@ -1,2 +1,2 @@
 # MaratusNemo
-This repository is my documented exploration of Web Development.
+Maratus Nemo is my documented exploration of Web Development.
