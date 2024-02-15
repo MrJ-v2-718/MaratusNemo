@@ -1,0 +1,99 @@
+/*
+Author: MrJ
+Date: 2/8/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and header content */
+body {
+    background-color: #d9d9d9;
+}
+
+header, footer {
+    padding: 2%;
+    text-align: center;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    overflow: auto;
+}
+
+main p {
+    font-size: 1.25em;
+    padding: 2%;
+}
+
+main a {
+    color: #0000b3;
+    text-decoration: none;
+}
+
+#orange, #purple, #green {
+    display: block;
+    margin-bottom: 2%;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+#questions {
+    clear: left;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    display: inline-block;
+    padding-top: 5%;
+}
+
+/* Orange */
+.orange-hex {
+	background-color: #f07122
+}
+                
+.orange-rgb {
+	background-color: rgb(240 113 34)
+}
+                
+.orange-hsl {
+	background-color: hsl(23 88% 54%)
+}
+
+/* Purple */
+.purple-hex {
+	background-color: #380786
+}
+                
+.purple-rgb {
+	background-color: rgb(56 7 134)
+}
+                
+.purple-hsl {
+	background-color: hsl(263 89% 28%)
+}
+
+
+/* Green */
+.green-hex {
+	background-color: #139e49
+}
+                
+.green-rgb {
+	background-color: rgb(19 158 73)
+}
+                
+.green-hsl {
+	background-color: hsl(143 78% 35%)
+}
+
