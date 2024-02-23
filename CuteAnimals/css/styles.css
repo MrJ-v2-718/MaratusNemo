@@ -1,0 +1,110 @@
+/*
+    Student Name: MrJ
+	File Name: styles.css
+	Current Date: 2/22/2024
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #a2d2ff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+.mobile {
+	display: block;
+}
+
+/* Style rule to hide tablet-desk class */
+.tablet-desktop {
+	display: none;
+}
+
+/* Style rules for header content */
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 5%;
+    font-size: 3em;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+	list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+	display: inline-block;
+    font-size: 1em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    padding: 3%;
+}
+
+nav li a {
+    display: block;
+    color: #bde0fe;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #bde0fe;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.btn {
+	background-color: #ffc8dd;
+	padding: 2%;
+	margin-top: 2%;
+	margin-right: auto;
+	margin-bottom: 2%;
+	margin-left: auto;
+	width: 80%;
+	text-align: center;
+    border-radius: 5px;
+}
+
+.corner {
+	border-radius: 12px;
+}
+
+#info a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.25em;
+	display: block;
+}
+
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+}
