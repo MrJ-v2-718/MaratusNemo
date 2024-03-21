@@ -1,0 +1,64 @@
+/*
+Author: MrJ
+Date: 3/21/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for table element */
+table {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border: 3px solid #71881b;
+}
+
+/* Style rule for table, table row, table header cell, and table data cells */
+table, tr, th, td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* Style rule for caption element */
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* Style rule for table header cells and table data cells */
+th, td {
+	border: 1px solid #7188bb;
+}
+
+/* Style rule for table data cells */
+td {
+	text-align: center;
+}
+
+/* Style rule for table row element */
+tr {
+	background-color: #d3e788;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
