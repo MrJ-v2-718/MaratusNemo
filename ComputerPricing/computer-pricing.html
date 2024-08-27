@@ -1,0 +1,135 @@
+<!--
+	Name: MrJ
+	Course: Data Driven Web Pages
+	Assignment: Computer Pricing
+	Date: 8/27/2024
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<script type="text/javascript">
+	function GetTotal() {
+		var ProcessorPrice = 0;
+		var HardDrivePrice = 0;
+		var MemoryPrice = 0;
+		var NetworkCardPrice = 0;
+		var ModemPrice = 0;
+		var TotalPrice = 0;
+		var i;
+	  
+		// Get Processor Price
+		for (i = 1; i <= 3; i++) {
+			if (document.getElementById("Processor" + i).checked) {
+				ProcessorPrice = parseInt(document.getElementById("Processor" + i).value);
+			}
+		}
+		
+		// Get Hard Drive Price
+		for (i = 1; i <= 3; i++) {
+			if (document.getElementById("HardDrive" + i).checked) {
+				HardDrivePrice = parseInt(document.getElementById("HardDrive" + i).value);
+			}
+		}
+		
+		// Get Memory Price
+		MemoryPrice = parseInt(document.getElementById("Memory").value);
+		
+		// Get Network Card Price
+		if (document.getElementById("NetworkCard").checked) {
+			NetworkCardPrice = parseInt(document.getElementById("NetworkCard").value);
+		} else {
+			NetworkCardPrice = 0;
+		}
+		
+		// Get Modem Price
+		if (document.getElementById("Modem").checked) {
+			ModemPrice = parseInt(document.getElementById("Modem").value);
+		} else {
+			ModemPrice = 0;
+		}
+		
+		// Get Total Price
+		TotalPrice = 1000 + ProcessorPrice + HardDrivePrice + MemoryPrice + NetworkCardPrice + ModemPrice;
+		document.getElementById("TotalPrice").value = TotalPrice;
+	}
+	</script>
+	
+	<title>Computer Pricing</title>
+</head>
+<body>
+
+	<style type="text/css">
+		table td {font-family: "Arial"; font-size: "10pt"}
+		table td#Column1 {background-color:#F0F0F0}
+	</style>
+
+	<form name="ComputerPricingForm">
+
+	<h2>Computer Pricing</h2>
+
+	<table>
+	
+	<tr>
+		<td>Base Price: </td>
+		<td>$1,000</td>
+	</tr>
+	
+	<tr>
+		<td id="Column1" rowspan="3">Processor: </td>
+		<td><input id="Processor1" type="radio" name="Processor" value="0"/>1.5 GHz</td>	
+	</tr>
+	<tr>
+		<td><input id="Processor2" type="radio" name="Processor" value="400"/>2.0 GHz (add $400)</td>
+	</tr>
+	<tr>
+		<td><input id="Processor3" type="radio" name="Processor" value="600"/>3.0 GHz (add $600)</td>
+	</tr>
+	
+	<tr>
+		<td id="Column1" rowspan="3">Hard Drive: </td>
+		<td><input id="HardDrive1" type="radio" name="HardDrive" value="0"/>40 GB</td>	
+	</tr>
+	<tr>
+		<td><input id="HardDrive2" type="radio" name="HardDrive" value="200"/>80 GB (add $200)</td>
+	</tr>
+	<tr>
+		<td><input id="HardDrive3" type="radio" name="HardDrive" value="400"/>100 GB (add $400)</td>
+	</tr>
+	
+	<tr>
+		<td id="Column1">Memory: </td>
+		<td><select id= "Memory" name="Memory">
+			<option value="0">1024 MB</option>
+			<option value="300">2048 MB (add $300)</option>
+			<option value="500">4096 MB (add $500)</option>
+			<option value="700">8192 MB (add $700)</option>
+		</select></td>
+	</tr>
+	
+	<tr>
+		<td id="Column1">Network Card: </td>
+		<td><input id="NetworkCard" type="checkbox" name="NetworkCard" value="70"/>(add $70)</td>
+	</tr>
+	
+	<tr>
+		<td id="Column1">Modem: </td>
+		<td><input id="Modem" type="checkbox" name="Modem" value="50"/>(add $50)</td>
+	</tr>
+	
+	<tr>
+		<td><input type="button" value="Total Price" onClick="GetTotal()"/></td>
+
+		<td>$ <input id="TotalPrice" type="text" name="TotalPrice" value=""/></td>
+	</tr>
+	
+	</table>
+
+	</form>
+</body>
+</html>
