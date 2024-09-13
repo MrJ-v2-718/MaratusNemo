@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 2
+
+   Author: MrJ
+   Date:   9/9/2024
+   
+   Filename: layout.css
+
+*/
+
+header, footer, aside, article, a {
+	padding: 10px;
+	outline: gray dashed 3px;
+}
+
+
+body {
+	width: 90%;
+	min-width: 640px;
+	max-width: 1024px;
+	margin: 30px 88px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 50px 30px 1fr 1fr 100px;
+	grid-gap: 15px;
+}
+
+a {
+	display: block;
+}
+
+body > header {
+	grid-row: 1;
+	grid-column: 1/-1;
+}
+
+body > article#intro {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+
+body > article#main {
+	grid-row: span 2;
+	grid-column: span 3;
+}
+
+body > footer#footer1 {
+	grid-row: 5;
+	grid-column: span 2;
+}
+
+body > footer#footer2 {
+	grid-row: 5;
+	grid-column: span 2;
+}
+
+body > footer#footer3 {
+	grid-row: 5;
+	grid-column: span 2;
+}
