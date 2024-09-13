@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+    Assignment 3
+    Name: MrJ
+    Date:   9/10/2024
+	Purpose: Allow a user to enter their name, email, phone, and address.
+	The information will be sent to a PHP script that will process and display it.
+	-->
+	<meta charset="utf-8">
+	<title>User Input</title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<form action="display_user_info.php" method="post">
+	
+	<table>
+		<th colspan=2>Please enter user information</th>
+		<!-- Places the first table row of table data items -->
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" name="first_name"></td>
+		</tr>
+		<!-- Places the second table row of table data items -->
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" name="last_name"></td>
+		</tr>
+		<!-- Places the third table row of table data items -->
+		<tr>
+			<td>E-mail Address:</td>
+			<td><input type="text" name="email"></td>
+		</tr>
+		<!-- Places the fourth table row of table data items -->
+		<tr>
+			<td>Telephone #:</td>
+			<td><input type="text" name="phone"></td>
+		</tr>
+		<!-- Places the fifth table row of table data items -->
+		<tr>
+			<td>Address:</td>
+			<td><input type="text" name="address"></td>
+		</tr>
+		<!-- Places the sixth table row of table data items -->
+		<tr>
+			<td>City:</td>
+			<td><input type="text" name="city"></td>
+		</tr>
+		<!-- Places the seventh table row of table data items -->
+		<tr>
+			<td>State:</td>
+			<td><input type="text" name="state"></td>
+		</tr>
+		<!-- Places the eighth table row of table data items -->
+		<tr>
+			<td>Zip:</td>
+			<td><input type="text" name="zip"></td>
+		</tr>
+		<!-- Places the ninth table row of table data items -->
+		<tr>
+			<td><input type="reset" value="Reset"></td>
+			<td><input type="submit" name="submit_form" value="Submit"></td>
+		</tr>
+	</table>	
+</form>
+</body>
+</html>
