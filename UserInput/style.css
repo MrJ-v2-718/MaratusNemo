@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	font-family:Verdana, Geneva, sans-serif;
+  font-family:Verdana, Geneva, sans-serif;
 }
 table {
-	border: 1px solid black;
+  border: 1px solid black;
   width:50%;
   margin-left:auto;
   margin-right:auto;
