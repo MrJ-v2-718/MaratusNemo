@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<!--
-    Assignment 3
-    Name: MrJ
-    Date:   9/10/2024
+    	Assignment 3
+    	Name: MrJ
+    	Date:   9/10/2024
 	Purpose: A PHP script that will process and display user information.
 	It receives its info from user_input.html via $_POST.
 	-->
