@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 	<!--
-    Paycheck Calculator
-    Name: MrJ
-    Date:   9/18/2024
+    	Paycheck Calculator
+    	Name: MrJ
+    	Date:   9/18/2024
 	Purpose: A PHP script that will process and display user paycheck information.
 	It receives its info from user_input.html via $_POST.
 	-->
 	<meta charset="utf-8">
 	<title>Paycheck Information</title>
 		<style type="text/css">
-				table, td { border: 1px solid black; }
-				td { width: 12em; }
-				.column1 { font-weight: bold; text-align: left; }
-				.column2 { text-align: right; }
+			table, td { border: 1px solid black; }
+			td { width: 12em; }
+			.column1 { font-weight: bold; text-align: left; }
+			.column2 { text-align: right; }
 		</style>
 </head>
 <body>
