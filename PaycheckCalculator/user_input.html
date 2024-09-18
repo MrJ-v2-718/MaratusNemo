@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+    Paycheck Calculator
+    Name: MrJ
+    Date:   9/18/2024
+	Purpose: Allow a user to enter employee's name, pay rate, and weekly hours worked.
+	The information will be sent to a PHP script that will process 
+	and display the employee's paycheck information.
+	-->
+	<meta charset="utf-8">
+	<title>Paycheck Calculator</title>
+		<style type="text/css">
+				td { width: 12em; }
+		</style>
+</head>
+<body>
+<form action="display_paycheck.php" method="post">
+	<header>
+		<h1>Please enter employee info</h1>
+	</header>
+	<table>
+		<!-- Places the first table row of table data items -->
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" name="first_name" size="20"></td>
+		</tr>
+		<!-- Places the second table row of table data items -->
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" name="last_name" size="20"></td>
+		</tr>
+		<!-- Places the third table row of table data items -->
+		<tr>
+			<td>Weekly Hours Worked:</td>
+			<td><input type="text" name="hours_worked" size="10"></td>
+		</tr>
+		<!-- Places the fourth table row of table data items -->
+		<tr>
+			<td>Hourly Rate $:</td>
+			<td><input type="text" name="hourly_rate" size="10"></td>
+		</tr>
+		<!-- Places the fifth table row of table data items -->
+		<tr>
+			<td><input type="submit" name="submit_form" value="Submit"></td>
+			<td><input type="reset" value="Reset"></td>
+		</tr>
+	</table>	
+</form>
+</body>
+</html>
