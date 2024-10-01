@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Coding Challenge 3
+
+   Author:   MrJ
+   Date:     10/1/2024
+   Filename: styles_print.css
+
+*/
+
+/* Page Box Style */
+
+@page {
+	size: 8.5in 11in;
+	margin: 1in;
+}
+
+/* Hypertext Style */
+
+a {
+	text-decoration: none;
+}
+
+
+nav {
+	page-break-inside: avoid;
+}
+
+nav > ol > li {
+	line-height: 0.3in;
+}
+
+a::after {
+	content: " [" attr(href) "] ";
+	display: inline-block;
+	margin-left: 20px;
+	word-wrap: break-word;
+}
