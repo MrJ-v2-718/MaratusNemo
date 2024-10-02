@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+    Assignment 5
+    Name: MrJ
+    Date:   10/02/2024
+	Purpose: Allow a user to enter their full name, telephone number,
+	email address, and notes.
+	The information will be sent to a PHP script that will process 
+	and display the information.
+	-->
+	<meta charset="utf-8">
+	<title>String Manipulation</title>
+		<style type="text/css">
+				td { width: 12em; }
+				h1 { margin-left: 2.5em; }
+		</style>
+</head>
+<body>
+<form action="display_user_info.php" method="post">
+	<header>
+		<h1>Please enter your info</h1>
+	</header>
+	<table>
+		<!-- Places the first table row of table data items -->
+		<tr>
+			<td>Full Name:</td>
+			<td><input type="text" name="full_name" size="35"></td>
+		</tr>
+		<!-- Places the second table row of table data items -->
+		<tr>
+			<td>Telephone Number:</td>
+			<td><input type="text" name="telephone_number" size="35"></td>
+		</tr>
+		<!-- Places the third table row of table data items -->
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" name="email_address" size="35"></td>
+		</tr>
+		<!-- Places the fourth table row of table data items -->
+		<tr>
+			<td>Notes:</td>
+			<td><textarea name="notes" rows="9" cols="34"></textarea></td>
+		</tr>
+		<!-- Places the fifth table row of table data items -->
+		<tr>
+			<td><input type="submit" name="submit_form" value="Submit"></td>
+			<td><input type="reset" value="Reset"></td>
+		</tr>
+	</table>	
+</form>
+</body>
+</html>
