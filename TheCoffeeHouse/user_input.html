@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+    Assignment 6
+    Name: MrJ
+    Date:   10/16/2024
+	Purpose: Allow a user to select a coffee, coffee type, and quantity.
+	User information is then collected including name, email, phone number,
+	address, city, state, and zip and is then sent to order_summary.php
+	for processing and displaying an order summary.
+	-->
+	<meta charset="utf-8">
+	<title>The Coffee House</title>
+		<style type="text/css">
+				td { width: 12em; }
+				h1 { margin-left: 2.5em; }
+				h3 { margin-left: 7.35em; }
+		</style>
+</head>
+<body>
+	<form action="order_summary.php" method="post">
+		<header>
+			<h1>The Coffee House</h1>
+			<h3>Order Form</h3>
+		</header>
+		<table>
+			<!-- Places the first table row of table data items -->
+			<tr>
+				<td>Coffee:</td>
+				<td>
+					<select name="coffee">
+					<option value="select">Select Coffee:</option>
+					<option value="boca_villa">Boca Villa $7.99/lb</option>
+					<option value="south_beach">South Beach Rhythm $8.99/lb</option>
+					<option value="pumpkin">Pumpkin Paradise $8.99/lb</option>
+					<option value="sumatran">Sumatran Sunset $9.99/lb</option>
+					<option value="bali_batur">Bali Batur $10.95/lb</option>
+					<option value="double_dark">Double Dark $9.95/lb</option>
+					</select>
+				</td>
+			</tr>
+			<!-- Places the second table row of table data items -->
+			<tr>
+				<td rowspan="2">Type:</td>
+				<td><input type="radio" name="type" value="0.00"/>Caffeinated</td>	
+			</tr>
+			<!-- Places the third table row of table data items -->
+			<tr>
+				<td><input type="radio" name="type" value="1.00"/>Decaffeinated (+$1.00/lb)</td>
+			</tr>
+			<!-- Places the fourth table row of table data items -->
+			<tr>
+				<td>Quantity (in pounds):</td>
+				<td><input type="text" name="quantity" size="5"></td>
+			</tr>
+			<!-- Places the fifth table row of table data items -->
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="name" size="30"></td>
+			</tr>
+			<!-- Places the sixth table row of table data items -->
+			<tr>
+				<td>E-mail Address:</td>
+				<td><input type="text" name="email_address" size="30"></td>
+			</tr>
+			<!-- Places the seventh table row of table data items -->
+			<tr>
+				<td>Telephone Number:</td>
+				<td><input type="text" name="phone_number" size="20"></td>
+			</tr>
+			<!-- Places the eighth table row of table data items -->
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" name="address" size="30"></td>
+			</tr>
+			<!-- Places the ninth table row of table data items -->
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city" size="25"></td>
+			</tr>
+			<!-- Places the tenth table row of table data items -->
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state" size="5"></td>
+			</tr>
+			<!-- Places the eleventh table row of table data items -->
+			<tr>
+				<td>Zip:</td>
+				<td><input type="text" name="zip" size="15"></td>
+			</tr>
+			<!-- Places the twelfth table row of table data items -->
+			<tr>
+				<td><input type="submit" name="submit_form" value="Submit"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</table>	
+	</form>
+</body>
+</html>
