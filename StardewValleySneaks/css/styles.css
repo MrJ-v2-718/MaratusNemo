@@ -1,0 +1,173 @@
+/*
+    Student Name: MrJ
+	File Name: styles.css
+	Current Date: 10/22/2024
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+	font-family: Courier New, "Times New Roman", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background: linear-gradient(#ffffff, #1E90FF);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Mobile Layout */
+
+/* Hide tablet-desktop content */
+    .tablet-desktop {
+        display: none;
+    }
+
+/* Style rule for the header */
+header {
+	padding: 2%;
+	color: #1E90FF;
+	text-align: center;
+}
+
+/* Style rules for navigation area */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: Courier New, "Times New Roman", sans-serif;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: #1E90FF;
+}
+
+nav li a {
+    display: block;
+	border-radius: 10px;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for the main content  */
+main {
+	display: block;
+	font-family: Courier New, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-top: solid 0.2em #1E90FF; 
+	border-bottom: solid 0.2em #1E90FF;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+    color: #fff;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+nav li a:hover {
+    color: #1E90FF;
+    background-color: #ffffff;
+	border-radius: 10px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 500px), print {
+
+	/* Style rule to show the tablet-desktop class */
+	.tablet-desktop {
+		display: block;
+	}
+	
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        margin: 0.5%;
+		border-radius: 10px;
+    }
+    
+    nav li a {
+        padding: 0.1em 1em;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+	/* Style rule for header element */
+	header {
+		width: 25%;
+		float: left;
+	}
+ 
+    /* Desktop Viewport: Style rules for nav */
+    
+    nav ul {
+    	text-align: right;
+    }
+    
+    nav li {
+        border-radius: 10px;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: 1.0em;
+    }
+    
+    nav li a:hover {
+    	color: #1E90FF;
+    	background-color: #ffffff;
+    }
+
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        border-style: none;
+        margin-bottom: 1em;
+        overflow: auto;
+    }
+    
+    /* Style rule for the col-content class */
+    .col-content {
+    	width: 30%;
+    	float: left;
+    	padding: 1.5% 1.5% 1.5% 1.5%;
+    }
+
+    /* Desktop Viewport: Style rule for footer */
+    footer {
+        clear: left;
+    }
+
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1441px) {
+	#container {
+		width: 1440px;
+		margin: 0 auto 0 auto;
+	}
+}
