@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 6
+   Coding Challenge 1
+   
+   Author: MrJ  
+   Date: 10/29/2024
+   Filename: code6-1_table.css
+
+*/
+
+/* Table Styles */
+
+table {
+	border: 20px groove gray;
+	border-collapse: collapse;
+}
+
+/* Table Cell Styles */
+
+table th, table td {
+	border: 1px solid gray;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+}
+
+/* Table Caption Styles */
+
+table caption {
+	caption-side: top;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+/* Row Group Styles */
+
+table thead {
+	background: aqua;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+	background: yellow;
+	width: 150px;
+}
+
+col#hourCols {
+	width: 75px;
+}
